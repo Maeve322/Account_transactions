@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "state": "EXECUTED",
+    "date": "2022-01-01T00:00:00",
+    "operationAmount": {
+      "amount": "100",
+      "currency": {
+        "name": "руб.",
+        "code": "RUB"
+      }
+    },
+    "description": "Первый тестовый платеж",
+    "from": "Maestro 1116837868705199",
+    "to": "Счет 64686473678894779111"
+  },
+  {
+    "id": 2,
+    "state": "CANCELED",
+    "date": "2022-01-02T00:00:00",
+    "operationAmount": {
+      "amount": "200",
+      "currency": {
+        "name": "USD",
+        "code": "USD"
+      }
+    },
+    "description": "Отмененный тестовый платеж",
+    "from": "Maestro 1116837868702222",
+    "to": "Счет 35383033474447895111"
+  }
+]
