@@ -1,7 +1,7 @@
 from scripts.insert import load_json, get_data, get_from, five_transactions, date_correct, sort_data, get_to, get_amount
 
 def main():
-    data = load_json()
+    data = load_json("operations.json")
     ex_items = get_data(data)
     sort_items = sort_data(ex_items)
     items = five_transactions(sort_items)

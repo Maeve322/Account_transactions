@@ -1,8 +1,8 @@
 import json
 
-def load_json():
+def load_json(file):
     """"Читает файл json"""
-    with open('operations.json', 'r', encoding='utf-8') as f:
+    with open(file, 'r', encoding='utf-8') as f:
         data = json.load(f)
         return data
 
