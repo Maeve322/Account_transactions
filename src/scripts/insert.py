@@ -1,4 +1,6 @@
 import json
+import re
+
 
 def load_json(file):
     """"Читает файл json"""
@@ -23,8 +25,8 @@ def five_transactions(sort_items):
 
 def date_correct(date):
     """Переделывает дату"""
-    new_date = date.split('T')
-    return new_date[0][-2:] + new_date[0][-6:-2] + new_date[0][-10:-6]
+    new_date = date.split("T")
+    return new_date[0][-2:].replace("-", ".") + new_date[0][-6:-2].replace("-", ".") + new_date[0][-10:-6].replace("-", ".")
 
 
 def get_from(item):
