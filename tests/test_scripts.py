@@ -21,7 +21,7 @@ def test_five_transactions():
     assert five_transactions(["a","b","c","d","e","x"]) == ["a","b","c","d","e"]
 
 def test_date_correct():
-    assert date_correct("2020-01-24T10:50:58.294041") == '24-01-2020'
+    assert date_correct("2020-01-24T10:50:58.294041") == '24.01.2020'
 
 def test_get_from(transactions):
    item = transactions[0]
